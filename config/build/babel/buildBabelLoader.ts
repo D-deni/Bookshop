@@ -9,7 +9,7 @@ export function buildBabelLoader(options: BuildOptions) {
       options: {
         presets: ['@babel/preset-env', '@babel/preset-typescript',
           ['@babel/preset-react', {
-            runtime: options.mode ? 'automatic' : 'classic'
+            runtime:'automatic'
           }]
         ]
       }

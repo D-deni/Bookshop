@@ -14,6 +14,10 @@ export function buildLoaders(options: BuildOptions): webpack.ModuleOptions['rule
       },
     }
   }
+  const cssLoader = {
+    test: /\.css$/,
+    use: ['style-loader', 'css-loader', 'postcss-loader']
+  }
   const scssLoader = {
     test: /\.s[ac]ss$/i,
     use: [isDev ? 'style-loader' : MiniCssExtractPlugin.loader, cssLoaderWithModules, 'sass-loader']
@@ -67,6 +71,7 @@ export function buildLoaders(options: BuildOptions): webpack.ModuleOptions['rule
   }
   return [
     scssLoader,
+    cssLoader,
     // tsLoader,
     babelLoader,
     fontLoader,

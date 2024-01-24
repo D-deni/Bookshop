@@ -7,7 +7,8 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 import path from "path";
 import CopyPlugin from "copy-webpack-plugin";
-export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): webpack.Configuration['plugins'] {
+
+  export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): webpack.Configuration['plugins'] {
   const isDev = mode === 'development';
   const isProd = mode === 'production';
   const plugins: webpack.Configuration['plugins'] = [

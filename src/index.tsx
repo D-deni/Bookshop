@@ -3,8 +3,8 @@ import {App} from "./components/App";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Cart from "@/pages/Cart/Cart";
 import Shop from "@/pages/Shop/Shop";
-const root = document.getElementById('root')
 
+const root = document.getElementById('root')
 if (!root) {
   throw new Error('root not found')
 }

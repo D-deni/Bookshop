@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'MontserratRegular';
   src: url("assets/fonts/Montserrat-Regular.ttf");
@@ -15,4 +19,18 @@
   src: url("assets/fonts/Montserrat-Bold.ttf");
   font-weight: 700;
   font-style: normal;
+}
+
+.logo {
+  font-family: MontserratBold;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+#sidebar a.active {
+  color: black;
+  border: none !important;
+  text-decoration: none;
 }
